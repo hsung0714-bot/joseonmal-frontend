@@ -1,0 +1,70 @@
+.footer {
+  background-color: #ebe7dc;
+  padding: 60px 0 30px 0;
+  margin-top: 100px;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footerLogo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.description {
+  line-height: 1.6;
+  color: #777;
+}
+
+.linksRow {
+  display: flex;
+  gap: 80px;
+}
+
+.linkCol h4 {
+  color: #222;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.linkCol p {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.linkCol p:hover {
+  color: #8b2820;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #dcd8cd;
+  margin: 40px 0 20px 0;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+}
+
+.legal span {
+  margin-left: 20px;
+  cursor: pointer;
+}
