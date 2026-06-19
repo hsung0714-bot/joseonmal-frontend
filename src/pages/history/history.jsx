@@ -6,14 +6,10 @@ function history() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/dictionary')
+    fetch('/api/convert/history')
       .then((response) => response.json())
       .then((data) => {
-        if (data.items) {
-          setArchiveData(data.items);
-        } else {
-          setArchiveData(data);
-        }
+        setArchiveData(Array.isArray(data) ? data : []);
         setLoading(false);
       })
       .catch((error) => {
@@ -39,14 +35,14 @@ function history() {
             <div key={item.id} className={styles.historyCard}>
               <div className={styles.modernBox}>
                 <span className={styles.boxLabel}>MODERN KOREAN</span>
-                <p className={styles.boxText}>{item.modern || item.modern_meaning}</p>
+                <p className={styles.boxText}>{item.original_text}</p>
               </div>
               <div className={styles.arrowBox}>
                 <span className={styles.arrowIcon}>→</span>
               </div>
               <div className={styles.classicalBox}>
                 <span className={styles.boxLabelClassical}>CLASSICAL STYLE</span>
-                <p className={styles.boxTextClassical}>{item.classical || item.word}</p>
+                <p className={styles.boxTextClassical}>{item.converted_text}</p>
               </div>
             </div>
           ))}
