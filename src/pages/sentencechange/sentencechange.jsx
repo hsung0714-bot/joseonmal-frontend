@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './sentencechange.module.css';
 
 function sentencechange() {
-  const [inputText, setInputText] = useState('오늘 시험 망해서 우울함');
+  const [inputText, setInputText] = useState('오늘 시험 망해서 우울함'); // 나도 ㅠㅠ
 
   return (
     <div className={styles.wrapper}>
