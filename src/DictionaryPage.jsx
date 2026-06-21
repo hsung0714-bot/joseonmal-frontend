@@ -24,7 +24,7 @@ export default function DictionaryPage() {
     try {
       const params = new URLSearchParams({ page, size: PAGE_SIZE });
       if (q.trim()) params.set("q", q.trim());
-      const res = await fetch(`${API_BASE}/api/dictionary?${params}`);
+      const res = await fetch(`${API_BASE}api/dictionary?${params}`);
       if (!res.ok) throw new Error();
       const data = await res.json();
       setResults(data.items);
