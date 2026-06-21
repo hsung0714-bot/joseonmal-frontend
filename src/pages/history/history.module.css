@@ -1,0 +1,102 @@
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pageHeader {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 30px;
+}
+
+.yellowBadge {
+  background-color: #f7d774;
+  color: #222;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* 변환 리스트 카드 래퍼 */
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.historyCard {
+  background-color: #ffffff;
+  border: 1px solid #e2dfd8;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 30px 24px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.historyCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+}
+
+.modernBox {
+  flex: 1;
+}
+
+.arrowBox {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowIcon {
+  color: #8b2820;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.classicalBox {
+  flex: 1.2;
+}
+
+.boxLabel {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #bbb;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.boxLabelClassical {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #8b2820;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.boxText {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.boxTextClassical {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  line-height: 1.5;
+}
