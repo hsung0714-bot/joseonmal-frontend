@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './sentencechange.module.css';
 
-const API_BASE = '';
+const API_BASE = import.meta.env.PROD ? 'https://web-production-5954e.up.railway.app' : '';
 
 function renderWithHighlights(text, highlightedWords) {
   if (!highlightedWords || highlightedWords.length === 0) return text;

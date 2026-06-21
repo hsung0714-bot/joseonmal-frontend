@@ -6,7 +6,8 @@ function history() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/convert/history')
+    const API_BASE = import.meta.env.PROD ? 'https://web-production-5954e.up.railway.app' : '';
+    fetch(`${API_BASE}/api/convert/history`)
       .then((response) => response.json())
       .then((data) => {
         setArchiveData(Array.isArray(data) ? data : []);
