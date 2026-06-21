@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./DictionaryPage.module.css";
 
-const API_BASE = window.location.hostname === "localhost" ? "" : "https://web-production-5954e.up.railway.app";
+const API_BASE = "";
 const PAGE_SIZE = 10;
 
 function getPageRange(current, total) {
