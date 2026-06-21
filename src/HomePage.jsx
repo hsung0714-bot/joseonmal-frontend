@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./HomePage.module.css";
 
-const API_BASE = import.meta.env.PROD ? "https://web-production-5954e.up.railway.app" : "";
+const API_BASE = window.location.hostname === "localhost" ? "" : "https://web-production-5954e.up.railway.app";
 
 function renderConverted(text, highlightedWords) {
   if (!text || !highlightedWords.length) return text;

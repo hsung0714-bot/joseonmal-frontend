@@ -6,7 +6,7 @@ function history() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const API_BASE = import.meta.env.PROD ? 'https://web-production-5954e.up.railway.app' : '';
+    const API_BASE = window.location.hostname === 'localhost' ? '' : 'https://web-production-5954e.up.railway.app';
     fetch(`${API_BASE}/api/convert/history`)
       .then((response) => response.json())
       .then((data) => {
